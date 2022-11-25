@@ -1,0 +1,21 @@
+.btn-conversemos{
+  width: 185px;
+  height: 48px;
+  background: black;
+  cursor: pointer;
+   background: #454ADE;
+    border-radius: 12px;
+       color: #ffffff;
+       transition: all 200ms;
+}
+
+.btn-conversemos:hover{
+  transform: scale(1.05);
+  background: black;
+  cursor: pointer;
+   background: rgb(78, 78, 252);
+    border-radius: 12px;
+     width: 182px;
+      height:48px;
+       color: #ffffff;
+}

@@ -1,0 +1,156 @@
+.contacto-btn:hover {
+  color: black;
+}
+
+.btn-conversemos {
+  width: 185px;
+  height: 48px;
+  background: black;
+  cursor: pointer;
+  background: #454ade;
+  border-radius: 12px;
+  color: #ffffff;
+  transition: all 200ms;
+}
+
+.btn-conversemos:hover {
+  transform: scale(1.05);
+  background: black;
+  cursor: pointer;
+  background: rgb(78, 78, 252);
+  border-radius: 12px;
+  width: 182px;
+  height: 48px;
+  color: #ffffff;
+}
+
+.btn-inicio {
+  background: #ffffff;
+  border-radius: 100px;
+  border-width: 4px;
+  filter: drop-shadow(0px 4px 40px rgba(174, 174, 174, 0.25))
+    drop-shadow(0px 4px 100px rgba(69, 74, 222, 0.4));
+  width: 126px;
+  height: 126px;
+  color: #454ade;
+  box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.6);
+}
+
+.btn-inicio:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  border-radius: 100px;
+  border-width: 4px;
+  filter: drop-shadow(0px 4px 40px rgba(174, 174, 174, 0.25))
+    drop-shadow(0px 4px 100px rgba(69, 74, 222, 0.4));
+  width: 126px;
+  height: 126px;
+  color: #454ade;
+  box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.6);
+}
+
+#portafolio{
+  scroll-margin-top: 130px;
+}
+
+#conocenos{
+  scroll-margin-top: 150px;
+}
+
+#contacto{
+  scroll-margin-top: 135px;
+}
+
+/*
+
+@media (min-width: 1400px) {
+
+  .carousel-controlador{
+    height: 28%;
+  }
+
+}
+
+@media (min-width: 1500px) {
+
+  .carousel-controlador{
+    height: 33%;
+  }
+
+}
+
+@media (min-width: 1600px) {
+
+  .carousel-controlador{
+    height: 35%;
+  }
+
+}
+
+@media (min-width: 1700px) {
+
+  .carousel-controlador{
+    height: 38%;
+  }
+
+}
+
+
+@media (min-width: 1800px) {
+
+  .carousel-controlador{
+    height: 40%;
+  }
+
+}
+
+@media (min-width: 1900px) {
+
+  .carousel-controlador{
+    height: 43.1%;
+  }
+
+}
+
+
+@media (min-width: 2000px) {
+  .controlador-servicios {
+    margin-top: 51.5rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .controlador-servicios {
+    margin-top: 47rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .controlador-servicios {
+    margin-top: 43rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .controlador-servicios {
+    margin-top: 0rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .controlador-servicios {
+    margin-top: 30rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .controlador-servicios {
+    margin-top: 22rem;
+  }
+}
+
+*/
+
+
+
+

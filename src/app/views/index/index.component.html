@@ -1,0 +1,1259 @@
+<div class="relative" style="background: white;">
+  <div class="fixed right-2 bottom-4 z-30">
+    <div class="">
+      <i><img class="z-30" onClick="javascript:window.open('https://wa.me/+51960556951', '_blank');"
+          src="assets/img/logos_whatsapp-icon.png" style="cursor: pointer;" alt=""></i>
+    </div>
+  </div>
+</div>
+
+
+<mat-toolbar id="incio" class="h-[10%] lg:h-[13%] w-[100%] bg-[white] BiennaleBlod flex lg:justify-center  text-[16px]"
+  style="z-index: 2;">
+  <div class="w-[50%] hidden lg:block">
+    <div class="w-[100%] flex lg:justify-center">
+      <span data-aos="fade-down" data-aos-duration="800" style="cursor: pointer;" routerLink="['#inicio']" class=""><img
+          class="2xl:w-[180px] xl:w-[140px] lg:w-[120px]" src="assets/img/Group.svg" alt=""></span>
+      <!-- espacios invisbles que se presentan como texto NO BORRAR -->
+      ㅤ
+      ㅤ
+      ㅤ
+      ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+      <!-- espacios invisbles que se presentan como texto NO BORRAR -->
+    </div>
+  </div>
+  <span class="example-spacer"></span>
+  <span class="example-spacer"></span>
+
+  <div class="lg:hidden block">
+    <div class="flex justify-start ">
+      <i><img  routerLink="['#inicio']" src="assets/img/Group.svg" alt=""></i>
+    </div>
+  </div>
+
+  <div class="w-[100%] lg:hidden block">
+    <div>
+
+      <mat-drawer-container class="example-container" autosize>
+
+
+        <div class="example-sidenav-content" style="background: white;">
+          <button style="z-index: 3;" type="button" mat-button (click)="drawer.toggle()">
+            <img class="absolute top-2  right-3" src="assets/img/Vector (6).png" alt="">
+          </button>
+        </div>
+
+      </mat-drawer-container>
+    </div>
+  </div>
+
+  <div class="w-[50%] hidden lg:block">
+    <div class=" flex justify-center" style="height: 100%;">
+
+
+      ㅤ
+
+      <div class="flex right-0  lg:space-x-4 xl:space-x-8 2xl:space-x-10" style=" align-items: center; ">
+
+
+        <a data-aos="fade-down" data-aos-duration="1000" mat-button href="#servicios">Servicios</a>
+
+
+        <a data-aos="fade-down" data-aos-duration="1000" mat-button href="#portafolio">Portafolio</a>
+
+
+        <a data-aos="fade-down" data-aos-duration="1000" mat-button href="#conocenos">Conócenos</a>
+
+        <button data-aos="fade-down" data-aos-duration="800" class="btn-conversemos" target="" mat-button
+          onclick="window.location.href='#contacto'">
+          Contacto</button>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</mat-toolbar>
+
+
+
+<section>
+
+  <mat-drawer #drawer class="BiennaleMedium example-sidenav" mode="side"
+    style="width: 100%; position: fixed; z-index: 4; background: #454ADE; z-index: 50;">
+
+
+     <img class="absolute left-0 bottom-0" src="assets/img/Ellipse 28 menu de hamburguesa.png" alt="">
+    <div class="h-[100%] mt-[-40px] items-center flex flex-col justify-center space-y-11 text-[20px]" style="color: white;">
+      <a (click)="drawer.toggle()" href="#servicios2 "> Servicios</a>
+      <a (click)="drawer.toggle()" href="#portafolio "> Portafolio</a>
+      <a (click)="drawer.toggle()" href="#conocenos "> Nosotros</a>
+      <a (click)="drawer.toggle()" href="#contacto "> Contacto</a>
+    </div>
+
+    <div class="flex justify-center mt-[-50px]">
+    <a  (click)="drawer.toggle()" href="#inicio "><img src="assets/img/PointtHamburgesa.svg" alt=""></a>
+  </div>
+    <button style="z-index: 3;" type="button" mat-button (click)="drawer.toggle()">
+      <img class="absolute top-6  right-6" src="assets/img/cerrarmenu.png" alt="">
+    </button>
+  </mat-drawer>
+
+  <div class="hidden lg:block">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"
+      style="height: 10%; margin-bottom: 100px;">
+      <div class="carousel-inner">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span aria-hidden="true"><img src="assets/img/Vector-Izq.svg" style="height: 55px;" alt=""></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="assets/img/PrimerSlider/PRIMERA IMAGEN DEL HOME 1.svg" style="height:700px ; object-fit: cover;"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span aria-hidden="true"><img src="assets/img/Vector-Der.svg" style="height: 55px;" alt=""></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="carousel-item" data-bs-interval="2000">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span aria-hidden="true"><img src="assets/img/Vector-Izq.svg" style="height: 55px;" alt=""></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <img src="assets/img/PrimerSlider/SEGUNDA IMAGEN DEL HOME 1.svg" style="height:700px ; object-fit: cover;"
+            class="d-block w-100" alt="...">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span aria-hidden="true"><img src="assets/img/Vector-Der.svg" style="height: 55px;" alt=""></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="carousel-item">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span aria-hidden="true"><img src="assets/img/Vector-Izq.svg" style="height: 55px;" alt=""></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <img src="assets/img/PrimerSlider/TERCERA IMAGEN DEL HOME 1.svg" style="height:700px ; object-fit: cover;"
+            class="d-block w-100" alt="...">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span aria-hidden="true"><img src="assets/img/Vector-Der.svg" style="height: 55px;" alt=""></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lg:hidden block">
+    <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel" style="height: 10%;">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2"
+            data-bs-slide="prev">
+            <span aria-hidden="true"><img src="assets/img/Vector-Izq.svg" style="height: 25px;" alt=""></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <img src="assets/img/PrimerSlider/PRIMERA-IMAGEN-DEL-HOME-2---MOBILE.jpg" class="d-block w-100" style="height:667px ; object-fit: cover;"
+            alt="...">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2"
+            data-bs-slide="next">
+            <span aria-hidden="true"><img src="assets/img/Vector-Der.svg" style="height: 25px;" alt=""></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2"
+            data-bs-slide="prev">
+            <span aria-hidden="true"><img src="assets/img/Vector-Izq.svg" style="height: 25px;" alt=""></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <img src="assets/img/PrimerSlider/SEGUNDA-IMAGEN-DEL-HOME-2---MOBILE.jpg" class="d-block w-100" style="height:667px ; object-fit: cover;"
+            alt="...">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1" class="active"
+              aria-current="true" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2"
+            data-bs-slide="next">
+            <span aria-hidden="true"><img src="assets/img/Vector-Der.svg" style="height: 25px;" alt=""></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="carousel-item">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2"
+            data-bs-slide="prev">
+            <span aria-hidden="true"> <img src="assets/img/Vector-Izq.svg" style="height: 25px;" alt=""></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <img src="assets/img/PrimerSlider/TERCERA-IMAGEN-DEL-HOME-2---MOBILE.jpg" class="d-block w-100" style="height:667px ; object-fit: cover;"
+            alt="...">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2" class="active"
+              aria-current="true" aria-label="Slide 3"></button>
+          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2"
+            data-bs-slide="next">
+            <span aria-hidden="true"> <img src="assets/img/Vector-Der.svg" style="height: 25px;" alt=""></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="hidden lg:block">
+
+    <div class="flex justify-center">
+
+      <div class="w-[100%]" style="height: 100%;">
+
+        <div class="w-[100%] ">
+          <div class="flex justify-center lg:mt-[10rem] xl:mt-[8rem] 2xl:mt-[12rem]">
+            <div class="flex flex-col text-white">
+              <div class="w-[100%] flex justify-center">
+                <p  data-aos="fade-up"  class="BiennaleBlod text-[39px] w-[570px] flex justify-center z-10">Especialistas en Gestión</p>
+              </div>
+              <div class="w-[100%] flex justify-center">
+                <p data-aos="fade-up" class="BiennaleBlod text-[39px] w-[570px] flex justify-center z-10">de<span
+                    style="margin-left: 10px; width: 87%; background: #3EF992; border-radius: 12px; display: flex; justify-content: center; color: #454ADE;">
+                    Redes Sociales y
+                    Branding</span></p>
+              </div>
+              <div class="flex flex-col  text-[30px] BiennaleMedium">
+                <div class="flex justify-center">
+                  <p data-aos="fade-up" data-aos="fade-up" class="mt-9 z-10">Es hora de invertir en tu marca
+                  </p>
+                </div>
+                <div class="flex justify-center">
+                  <p data-aos="fade-up" class="z-10">
+                    ¡Todo comienza por la acción!
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex justify-center">
+                <div class="hidden lg:block mt-9 mb-8">
+
+
+                  <button data-aos="fade-down" data-aos-duration="800" class="BiennaleBlod mat-button btn-inicio z-10"
+                    target="" onclick="window.location.href='#contacto'">
+                    Conversemos</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="lg:hidden block">
+    <div class="flex flex-col">
+
+      <div class="w-[100%]">
+
+        <div class="w-[100%] ">
+          <div class="flex justify-center mt-40">
+            <div data-aos="fade-up" class="flex flex-col w-[270px] text-white">
+
+              <p data-aos="fade-up" class="flex justify-center BiennaleBlod text-[24px]">Especialistas en</p>
+              <p data-aos="fade-up" class="flex justify-center BiennaleBlod text-[24px]">gestión de redes</p>
+              <p data-aos="fade-up" class="flex justify-center BiennaleBlod text-[24px]">sociales y branding</p>
+              <p data-aos="fade-up" class="flex justify-center BiennaleMedium text-[14px] mt-6" style="color: #B7B7B7;">
+                Es
+                hora de invertir en tu marca</p>
+              <p data-aos="fade-up" class="flex justify-center BiennaleMedium text-[14px] " style="color: #B7B7B7;">
+                ¡Todo comienza por la acción!</p>
+              <div class="flex justify-center">
+                <div class="mt-9">
+                  <button class="BiennaleBlod mat-button btn-inicio" target=""
+                    onclick="window.location.href='#contacto'">
+                    Conversemos</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
+
+
+<section id="primera" class="BiennaleBlod" style="background: white;">
+
+
+
+  <section id="servicios"
+    class="hidden lg:block servis-content h-[1750px] BiennaleBlod 3xl:mt-[4rem] 2xl:mt-[4rem] xl:mt-[8rem] lg:mt-[6rem] "
+    style="background: linear-gradient(180deg, #3EF992 0%, rgba(62, 249, 146, 0) 100%); border-top-left-radius: 3rem; border-top-right-radius: 3rem;">
+
+    <div>
+      <div class="w-[100%] flex justify-center">
+        <div class="">
+          <div class=" 3xl:text-[2200%] 2xl:text-[1900%] xl:text-[1300%] lg:text-[1200%] opacity-5">
+            <p  data-aos="fade-up">Servicios</p>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-right" class="w-[550px] xl:text-[30px] text-[25px] ml-36 mt-20">
+        <p class="mt-10">Lograremos que tu proyecto despegue,<span style="color: #454ADE;"> se consolide </span> y sea
+          identificado por
+          tu cliente potencial.</p>
+
+      </div>
+
+      <div class="relative">
+        <div class="absolute right-0 top-0">
+          <img src="assets/img/Ellipse 28.png" alt="">
+        </div>
+      </div>
+      <!-- Container -->
+      <app-cuadros></app-cuadros>
+      <!-- Servicios First Part -->
+      <div class="lg:mt-[-2250px] xl:mt-[-1690px] 2xl:mt-[-1750px] flex justify-between">
+        <div class="flex justify-start ">
+          <div data-aos="fade-right" class=" ml-36 ">
+            <i><img src="assets/img/+.png" alt=""></i>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="w-[100%] flex justify-center">
+            <div class="">
+              <div class=" text-[60px]">
+                <p data-aos="fade-down">Servicios</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-[100%] flex justify-center mt-6">
+            <div class="">
+              <div data-aos="fade-down" class="w-[521px] text-[17px] ">
+                <div class="flex justify-center">
+                  <p>Pointt te guiará hacia el logro de tus <span style="color: #454ADE;">objetivos</span> comerciales
+                  </p>
+                </div>
+                <div class="flex justify-center">
+                  <p>a tavés de las potentes herramientas digitales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="">
+            <div class="mr-32">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Responsive -->
+
+
+  <section id="servicios2" class="lg:hidden block servis-content BiennaleBlod mt-[10rem]"
+    style="background: linear-gradient(180deg, #3EF992 0%, rgba(62, 249, 146, 0) 100%);">
+
+    <div>
+      <div class="w-[100%] flex justify-center">
+        <div class="flex absolute">
+          <div class="text-[500%] mt-20 opacity-5">
+            <p  data-aos="fade-up">Servicios</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="flex justify-center">
+          <div class="text-[40px] mt-24">
+            <p  data-aos="fade-up">Servicios</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="BiennaleMedium flex justify-center">
+        <div  data-aos="fade-right" class="text-[13px] mt-6 ">
+          <p class="flex justify-center">Pointt te guiará hacia el logro de tu</p>
+          <p class="flex justify-center"><span style="color: #454ADE; margin-right: 4px;">objetivos </span> comerciales
+            a través de las</p>
+          <p class="flex justify-center">potentes herramientas digitales</p>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <div  data-aos="fade-right"  class="text-[15px] mt-9 ">
+          <p class="flex justify-center">Logramos que tu proyecto</p>
+          <p class="flex justify-center">despegue, <span style="color: #454ADE; margin-right: 5px; margin-left: 5px;">se
+              consolide </span>y sea</p>
+          <p class="flex justify-center">identificado por tu cliente potencial</p>
+        </div>
+      </div>
+      <!-- Container -->
+      <app-cuadros></app-cuadros>
+
+
+    </div>
+  </section>
+
+  <section id="portafolio">
+    <div class="hidden lg:block">
+      <div class="w-[100%]">
+        <div
+          class="flex justify-center lg:mt-[70rem] xl:mt-[10rem] 2xl:mt-[10rem] 3xl:mt-[22rem] h-[150px] text-[60px]">
+          <p data-aos="fade-down" data-aos-duration="800">Portafolio</p>
+
+          <div
+            class="absolute 3xl:text-[580%] 2xl:text-[450%] xl:text-[400%] lg:text-[300%] xl:mt-[-180px] lg:mt-[-100px] opacity-5">
+            <p data-aos="fade-right" data-aos-duration="800">
+              Portafolio
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:hidden block">
+      <div class="w-[100%] flex justify-center">
+        <div class="flex absolute">
+          <div class="text-[470%] mt-20 opacity-5">
+            <p>Portafolio</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="flex justify-center">
+          <div class="text-[40px] mt-24">
+            <p>Portafolio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel 1 -->
+  <section class="hidden lg:block">
+    <div class="lg:mt-[2rem] xl:mt-[3rem] 2xl:mt-[1rem] 3xl:mt-[10rem]">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"
+        style="background: white; height: 65%;">
+        <div class="carousel-inner" style="height: 100%;">
+          <div class="carousel-item active" data-bs-interval="4000" style="height: 100%">
+            <div class="flex justify-center space-x-10"
+              style="height: 100%; display: flex; align-items: center; justify-content: center;">
+              <div class="3xl:w-[650px] 2xl:w-[600px] xl:w-[450px] lg:w-[350px]">
+                <img src="assets/img/Portafolio-slider/BACANNA-2-1.jpg" class="d-block 3xl:w-100 2xl:w-45" alt="...">
+                <h5 class="mt-3">BACANA</h5>
+                <p>Gestión de redes sociales
+                </p>
+              </div>
+              <div class="3xl:w-[650px] 2xl:w-[600px] xl:w-[450px] lg:w-[350px]">
+                <img src="assets/img/Portafolio-slider/BACANNA-2-1-(1).jpg" class="d-block 3xl:w-100  2xl:w-45"
+                  alt="...">
+                <h5 class="mt-3">DOLCE GELATO</h5>
+                <p>Gestión de redes sociales
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000" style="height: 100%;">
+            <div class="flex justify-center space-x-10"
+              style="height: 100%; display: flex; align-items: center; justify-content: center;">
+              <div class="3xl:w-[650px] 2xl:w-[600px] xl:w-[450px] lg:w-[350px]">
+                <img src="assets/img/Portafolio-slider/BACANNA-2-1-(2).jpg" class="d-block 3xl:w-100 2xl:w-45"
+                  alt="...">
+                <h5 class="mt-3">HQ</h5>
+                <p>Gestión de redes sociales</p>
+              </div>
+              <div class="3xl:w-[650px] 2xl:w-[600px] xl:w-[450px] lg:w-[350px]">
+                <img src="assets/img/Portafolio-slider/BACANNA-2-1-(3).jpg" class="d-block 3xl:w-100  2xl:w-45"
+                  alt="...">
+                <h5 class="mt-3">KATA</h5>
+                <p>Gestión de redes sociales
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000" style="height: 100%;">
+            <div class="flex justify-center space-x-10"
+              style="height: 100%; display: flex; align-items: center; justify-content: center;">
+              <div class="3xl:w-[650px] 2xl:w-[600px] xl:w-[450px] lg:w-[350px]">
+                <img src="assets/img/Portafolio-slider/BACANNA-2-1-(4).jpg" class="d-block 3xl:w-100 2xl:w-45"
+                  alt="...">
+
+                <h5 class="mt-3">NOVADENT</h5>
+                <p>Gestión de redes sociales</p>
+
+              </div>
+              <div class="3xl:w-[650px] 2xl:w-[600px] xl:w-[450px] lg:w-[350px]">
+                <img src="assets/img/Portafolio-slider/BACANNA-2-1-(5).jpg" class="d-block 3xl:w-100 2xl:w-45"
+                  alt="...">
+                <h5 class="mt-3">SUYHO CONSULTORIA</h5>
+                <p>Gestión de redes sociales</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="mr-20" aria-hidden="true"> <img src="assets/img/anterior.png" alt=""></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="ml-18" aria-hidden="true"> <img src="assets/img/siguiente.png" alt=""></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel 2 (Responsive) -->
+
+  <section class="lg:hidden block">
+    <div class="mt-8">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"
+        style="background: white; height: 55%;">
+        <div class="carousel-inner" style="height: 100%;">
+          <div class="carousel-item active" data-bs-interval="4000" style="height: 100%">
+            <div class="flex justify-center space-x-10"
+              style="height: 100%; display: flex; align-items: center; justify-content: center;">
+              <div class="w-[80%]">
+                <img src="assets/img/Portafolio-slider/BACANNA-SliderResponsive(1).png" class="d-block" alt="...">
+                <div class="w-[100%] flex justify-center">
+                  <div class="flex flex-col">
+                    <div class="w-[100%] flex justify-center">
+                      <h5 class="mt-3">BACANNA</h5>
+                    </div>
+                    <p>Gestión de redes sociales
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000" style="height: 100%;">
+            <div class="flex justify-center space-x-10"
+              style="height: 100%; display: flex; align-items: center; justify-content: center;">
+              <div class="w-[80%]">
+                <img src="assets/img/Portafolio-slider/BACANNA-SliderResponsive(2).png" class="d-block" alt="...">
+                <div class="w-[100%] flex justify-center">
+                  <div class="flex flex-col">
+                    <div class="w-[100%] flex justify-center">
+                      <h5 class="mt-3">DOLCE GELATO</h5>
+                    </div>
+                    <p>Gestión de redes sociales
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000" style="height: 100%;">
+            <div class="flex justify-center space-x-10"
+              style="height: 100%; display: flex; align-items: center; justify-content: center;">
+              <div class="w-[80%]">
+                <img src="assets/img/Portafolio-slider/BACANNA-SliderResponsive(3).png" class="d-block" alt="...">
+                <div class="w-[100%] flex justify-center">
+                  <div class="flex flex-col">
+                    <div class="w-[100%] flex justify-center">
+                      <h5 class="mt-3">HQ</h5>
+                    </div>
+                    <p>Gestión de redes sociales
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000" style="height: 100%;">
+            <div class="flex justify-center space-x-10"
+              style="height: 100%; display: flex; align-items: center; justify-content: center;">
+              <div class="w-[80%]">
+                <img src="assets/img/Portafolio-slider/BACANNA-SliderResponsive(4).png" class="d-block" alt="...">
+                <div class="w-[100%] flex justify-center">
+                  <div class="flex flex-col">
+                    <div class="w-[100%] flex justify-center">
+                      <h5 class="mt-3">KATA</h5>
+                    </div>
+                    <p>Gestión de redes sociales
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000" style="height: 100%;">
+            <div class="flex justify-center space-x-10"
+              style="height: 100%; display: flex; align-items: center; justify-content: center;">
+              <div class="w-[80%]">
+                <img src="assets/img/Portafolio-slider/BACANNA-SliderResponsive(5).png" class="d-block" alt="...">
+                <div class="w-[100%] flex justify-center">
+                  <div class="flex flex-col">
+                    <div class="w-[100%] flex justify-center">
+                      <h5 class="mt-3">NOVADENT</h5>
+                    </div>
+                    <p>Gestión de redes sociales
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000" style="height: 100%;">
+            <div class="flex justify-center space-x-10"
+              style="height: 100%; display: flex; align-items: center; justify-content: center;">
+              <div class="w-[80%]">
+                <img src="assets/img/Portafolio-slider/BACANNA-SliderResponsive(6).png" class="d-block" alt="...">
+                <div class="w-[100%] flex justify-center">
+                  <div class="flex flex-col">
+                    <div class="w-[100%] flex justify-center">
+                      <h5 class="mt-3">SUYHO CONSULTORIA</h5>
+                    </div>
+                    <p>Gestión de redes sociales
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class=" 3xl:mt-[65rem] 2xl:mt-[55rem] xl:mt-[45rem] lg:mt-[36rem] mt-[25rem]">
+    <div class="w-[100%] hidden lg:block">
+      <div class="flex justify-center mt-56 h-[170px] text-[60px]">
+        <p data-aos="fade-up" data-aos-duration="800" class="z-10">Clientes</p>
+
+        <div
+          class="absolute 3xl:text-[580%] 2xl:text-[450%] xl:text-[400%] lg:text-[300%] xl:mt-[-180px] lg:mt-[-100px] opacity-5">
+          <p data-aos="fade-right" data-aos-duration="800">
+            Clientes
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="lg:hidden block">
+      <div class="w-[100%] flex justify-center">
+        <div class="flex absolute">
+          <div class="text-[470%] mt-20 opacity-5">
+            <p  data-aos="fade-up">Clientes</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="flex justify-center">
+          <div class="text-[40px] mt-24">
+            <p  data-aos="fade-up">Clientes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel 1 -->
+  <section class="hidden lg:block">
+    <div class="lg:mt-[0.5rem] xl:mt-[2rem] 2xl:mt-[3.5rem] 3xl:mt-[8rem]">
+      <div id="carouselExampleInterval2" class="carousel slide flex flex-wrap" data-bs-ride="carousel"
+        style="background: white; height: 30%;">
+        <div class="carousel-inner" style="height: 100%;">
+          <div class="carousel-item active" data-bs-interval="4000" style="height: 100%;">
+            <div class="flex justify-center "
+              style="height: 100%; display: flex; align-items: center; justify-content: center;">
+              <div class="flex flex-wrap space-x-5">
+                <div class="3xl:w-[250px] 2xl:w-[220px] xl:w-[200px] lg:w-[150px]">
+                  <img src="assets/img/LOGO_HQ 1.svg" class="d-block w-30" alt="...">
+                </div>
+                <div class="3xl:w-[250px] 2xl:w-[220px] xl:w-[200px] lg:w-[150px]">
+                  <img src="assets/img/LOGO_LENCITEX 1.svg" class="d-block w-30" alt="...">
+                </div>
+                <div class="3xl:w-[250px] 2xl:w-[220px] xl:w-[200px] lg:w-[150px]">
+                  <img src="assets/img/LOGO_NOVADENT 1.svg" class="d-block w-30" alt="...">
+                </div>
+                <div class="3xl:w-[250px] 2xl:w-[220px] xl:w-[200px] lg:w-[150px]">
+                  <img src="assets/img/LOGO_SUYHO 1.svg" class="d-block w-30" alt="...">
+                </div>
+                <div class="3xl:w-[250px] 2xl:w-[220px] xl:w-[200px] lg:w-[150px]">
+                  <img src="assets/img/LOGO_VC_DOLCEG 1.svg" class="d-block w-30" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000" style="height: 100%;">
+            <div class="flex justify-center "
+              style="height: 100%; display: flex; align-items: center; justify-content: center;">
+              <div class="flex flex-wrap space-x-5">
+                <div class="3xl:w-[300px] 2xl:w-[270px] xl:w-[230px] lg:w-[180px]">
+                  <img src="assets/img/LOGO_BACANNA 1.svg" class="d-block w-30" alt="...">
+                </div>
+                <div class="3xl:w-[300px] 2xl:w-[270px] xl:w-[230px] lg:w-[180px]">
+                  <img src="assets/img/LOGO_KATA 1.svg" class="d-block w-30" alt="...">
+                </div>
+                <div class="3xl:w-[300px] 2xl:w-[270px] xl:w-[230px] lg:w-[180px]">
+                  <img src="assets/img/LOGO-QPL 1.svg" class="d-block w-30" alt="...">
+                </div>
+                <div class="3xl:w-[300px] 2xl:w-[270px] xl:w-[230px] lg:w-[180px]">
+                  <img src="assets/img/LOGO_LENCITEX 1.svg" class="d-block w-30" alt="...">
+                </div>
+                <div class="3xl:w-[300px] 2xl:w-[270px] xl:w-[230px] lg:w-[180px]">
+                  <img src="assets/img/LOGO_NOVADENT 1.svg" class="d-block w-30" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2"
+          data-bs-slide="prev" style="height: 100%;">
+          <span class="" aria-hidden="true"> <img src="assets/img/anterior.png" alt=""></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2"
+          data-bs-slide="next" style="height: 100%;">
+          <span class="" aria-hidden="true"> <img src="assets/img/siguiente.png" alt=""></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel 2 (Responsive)-->
+  <section class="lg:hidden block">
+    <div class="mt-[1rem]">
+      <div id="carouselExampleInterval" class="carousel slide flex flex-wrap" data-bs-ride="carousel"
+        style="background: white; height: 20%;">
+        <div class="carousel-inner" style="height: 100%;">
+          <div class="carousel-item active" data-bs-interval="4000" style="height: 100%;">
+            <div class="flex justify-center "
+              style="height: 100%; display: flex; align-items: center; justify-content: center;">
+              <div class="flex flex-wrap space-x-3">
+                <div class="w-[100px]">
+                  <img src="assets/img/clientes/LOGO_HQ 1.png" class="d-block w-30" alt="...">
+                </div>
+                <div class="w-[100px]">
+                  <img src="assets/img/clientes/LOGO_VC_DOLCEG 1.png" class="d-block w-30" alt="...">
+                </div>
+                <div class="w-[100px]">
+                  <img src="assets/img/clientes/LOGO_NOVADENT 1.png" class="d-block w-30" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000" style="height: 100%;">
+            <div class="flex justify-center "
+              style="height: 100%; display: flex; align-items: center; justify-content: center;">
+              <div class="flex flex-wrap space-x-5">
+                <div class="w-[100px]">
+                  <img src="assets/img/clientes/LOGO_SUYHO 1.png" class="d-block w-30" alt="...">
+                </div>
+                <div class="w-[100px]">
+                  <img src="assets/img/clientes/LOGO_LENCITEX 1.png" class="d-block w-30" alt="...">
+                </div>
+                <div class="w-[100px]">
+                  <img src="assets/img/clientes/LOGO_BACANNA 1.png" class="d-block w-30" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000" style="height: 100%;">
+            <div class="flex justify-center "
+              style="height: 100%; display: flex; align-items: center; justify-content: center;">
+              <div class="flex flex-wrap space-x-5">
+                <div class="w-[100px]">
+                  <img src="assets/img/clientes/LOGO_KATA 1.png" class="d-block w-30" alt="...">
+                </div>
+                <div class="w-[100px]">
+                  <img src="assets/img/clientes/LOGO-QPL 1.png" class="d-block w-30" alt="...">
+                </div>
+                <div class="w-[100px]">
+                  <img src="assets/img/clientes/LOGO_HQ 1.png" class="d-block w-30" alt="...">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lg:hidden block">
+    <div class="flex relative mt-44">
+      <div class="w-[100%]">
+        <div class="flex justify-end ">
+          <i><img class="mr-6" src="assets/img/+ (1).png" alt=""></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="conocenos" class=" 3xl:mt-[40rem] 2xl:mt-[35rem] xl:mt-[30rem] lg:mt-[22rem] ">
+    <div class="w-[100%] lg:block hidden">
+      <div class="flex justify-center lg:mt-56 h-[300px]">
+        <div class="flex flex-col">
+          <div class="flex justify-center text-[60px]">
+            <p data-aos="fade-up" data-aos-duration="800" class="z-10">Conócenos</p>
+          </div>
+          <div data-aos="fade-up" data-aos="fade-down" class="flex flex-col mt-8" style="color: #6D7280;">
+            <div class="flex justify-center">
+              <p>Somos un equipo que ha crecido en la era digital, ponemos en marcha </p>
+            </div>
+            <div class="flex justify-center">
+              <p>ideas frescas y estrategias efectivas para cada rubro.</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute 3xl:text-[1900%] 2xl:text-[1700%] xl:text-[1450%] lg:text-[1000%] 2xl:mt-[-155px] xl:mt-[-150px] lg:mt-[-35px] opacity-5">
+          <p data-aos="fade-right" data-aos-duration="800">
+            Conócenos
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:hidden block">
+      <div class="w-[100%] flex justify-center">
+        <div class="flex absolute">
+          <div  class="text-[400%] mt-20 opacity-5">
+            <p data-aos="fade-up">Conócenos</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="flex justify-center">
+          <div class="text-[40px] mt-24">
+            <p data-aos="fade-up">Conócenos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-18">
+        <div class="w-[100%]">
+          <div class="flex justify-center">
+            <div  data-aos="fade-up" class="flex flex-col BiennaleMedium" style="color: #6D7280">
+              <p class="flex justify-center">Somos un equipo que ha crecido en la</p>
+              <p class="flex justify-center">era digital, ponemos en marcha ideas</p>
+              <p class="flex justify-center">frescas y estrategias efectivas para</p>
+              <p class="flex justify-center">cada rubro.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <div class="flex justify-center mt-28 lg:mt-0">
+        <div class=" w-[755px]">
+          <div class="lg:text-[30px] text-[15px]">
+            <div class="flex justify-center">
+              <div class="flex flex-col">
+                <p class="absolute lg:ml-[-100px] mt-[-20px] lg:mt-0"><img src="assets/img/“.png" alt=""></p>
+                <div data-aos="fade-right" data-aos-duration="700" class="flex">
+                  <p>El marketing como las redes nunca duermen,</p>
+                </div>
+                <div class="w-[100%]">
+                  <div data-aos="fade-right" data-aos-duration="800" class="flex justify-center">
+                    <p>porque están en constante evolución. Si</p>
+                  </div>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="900" class="w-[100%]">
+                  <div class="flex justify-center">
+                    <p>alguien se duerme, los competidores toman</p>
+                  </div>
+                </div>
+                <div class="w-[100%]">
+                  <p class="absolute lg:ml-[650px] ml-[200px]"><img src="assets/img/“ (1).png" alt=""></p>
+                  <div class="flex justify-center">
+                    <p data-aos="fade-right z-10" data-aos-duration="1000">la delantera fácilmente</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" class=" flex justify-center mt-6" style="color:#454ADE;
+      ;">
+        <p>Judyth Maza</p>
+      </div>
+
+      <div data-aos="fade-up" class=" flex justify-center mt-6" style="color: #6D7280;">
+        <p>CEO</p>
+      </div>
+
+      <div data-aos="fade-right" class="lg:block hidden mt-7 ml-[118px]">
+        <p><img src="assets/img/°.png" alt=""></p>
+      </div>
+    </div>
+  </section>
+  <!-- Carousel 1 -->
+  <section>
+    <div class="mt-[5rem] h-[70%]">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-controlador" data-bs-ride="true"
+        style="height: 20%;">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <div class="hidden lg:block">
+              <img src="assets/img/ultimoSlider/PrimeraImgUltimoSlider.svg"
+                style="object-fit: cover; width:100%; height:667px;" class="d-block w-100 lg:block" alt="...">
+            </div>
+            <div class="lg:hidden block">
+              <img src="assets/img/ultimoSlider/UltimoSliderResponsive1.jpg"
+                style="object-fit: cover; width:100%; height:350px;" class=" d-block w-100 lg:block" alt="...">
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <div class="hidden lg:block">
+              <img src="assets/img/ultimoSlider/SegundaImgUltimoSlider.svg"
+                style="object-fit: cover; width:100%; height:667px;" class="d-block w-100 lg:block" alt="...">
+            </div>
+            <div class="lg:hidden block">
+              <img src="assets/img/ultimoSlider/UltimoSliderResponsive2.jpg"
+                style="object-fit: cover; width:100%; height:350px;" class="d-block w-100 lg:block" alt="...">
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active"
+                aria-current="true" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <div class="hidden lg:block">
+              <img src="assets/img/ultimoSlider/TerceraImgUltimoSlider.svg"
+                style="object-fit: cover; width:100%; height:667px;" class="d-block w-100 lg:block" alt="...">
+            </div>
+            <div class="lg:hidden block">
+              <img src="assets/img/ultimoSlider/UltimoSliderResponsive3.jpg"
+                style="object-fit: cover; width:100%; height:350px;" class="d-block w-100 lg:block" alt="...">
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active"
+                aria-current="true" aria-label="Slide 3"></button>
+            </div>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contacto" class="3xl:mt-[80rem] 2xl:mt-[70rem] xl:mt-[55rem] lg:mt-[50rem] mt-[28rem]">
+    <div class="w-[100%] hidden lg:block">
+      <div class="flex justify-center mt-56 h-[300px] text-[60px]">
+        <p data-aos="fade-down" data-aos-duration="800">Contacto</p>
+
+        <div
+          class="absolute 3xl:text-[580%] 2xl:text-[450%] xl:text-[400%] lg:text-[300%] 2xl:mt-[-220px] xl:mt-[-170px] lg:mt-[-100px] opacity-5">
+          <p data-aos="fade-right" data-aos-duration="800">
+            Contacto
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="lg:hidden block">
+      <div class="w-[100%] flex justify-center">
+        <div class="flex absolute">
+          <div class="text-[470%] mt-20 opacity-5">
+            <p  data-aos="fade-up">Contacto</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="flex justify-center">
+          <div class="text-[40px] mt-24">
+            <p  data-aos="fade-up">Contacto</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <app-formulario></app-formulario>
+
+    <div class="flex justify-center">
+
+      <div class="mt-20 mb-10 lg:block hidden">
+        <button target="" class="btn-conversemos" mat-button [routerLink]="['/mensaje']">
+          Enviar</button>
+      </div>
+
+      <div class="w-[100%] block lg:hidden">
+        <div class="flex justify-center">
+          <button class="w-[85%] h-[48px] mt-20 mb-10" style="background: #454ADE; color: white; border-radius: 12px;"
+            mat-button [routerLink]="['/mensaje']">Enviar</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="lg:block hidden">
+      <div data-aos="fade-right" class="flex justify-end mr-28 ">
+        <img class="2xl:mb-40 lg:mb-20" src="assets/img/+.png" alt="">
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="hidden lg:block">
+    <div class="bg-black">
+      <div class="flex justify-center">
+        <div class="flex justify-between 2xl:space-x-64 xl:space-x-40 lg:space-x-24  border-b-2 mb-20"
+          style="border-color:#747474;">
+          <div class="flex flex-col mt-16 mb-6">
+            <div><img src="assets/img/Frame.png" alt=""></div>
+            <div class="text-[#3EF992] mt-[23px]">
+              <p>Lima, Perú</p>
+            </div>
+          </div>
+          <div class="flex flex-col text-white mt-14">
+
+            <div><i><img src="assets/img/call 1.png" alt=""></i></div>
+            <div>
+              <p>Contacto</p>
+            </div>
+            <div>
+              <p>960 556 951</p>
+            </div>
+
+          </div>
+
+          <div class="flex flex-col text-white mt-14">
+
+            <div><i><img src="assets/img/envelope 1.png" alt=""></i></div>
+            <div>
+              <p>Correo</p>
+            </div>
+            <div>
+              <p>hola@pointtagencia.com</p>
+            </div>
+
+          </div>
+          <div class="flex flex-wrap space-x-10 mt-20">
+            <div><i><img
+                  onClick="javascript:window.open('https://www.linkedin.com/company/pointt-agencia-digital/', '_blank');"
+                  style="cursor: pointer;" src="assets/img/Vector (1).png" alt=""></i></div>
+            <div><i><img
+                  onClick="javascript:window.open('https://www.facebook.com/profile.php?id=100068618932400', '_blank');"
+                  style="cursor: pointer;" src="assets/img/Vector (2).png" alt=""></i></div>
+            <div><i><img
+                  onClick="javascript:window.open('https://www.instagram.com/pointt.agencia/?hl=es-la', '_blank');"
+                  style="cursor: pointer;" src="assets/img/bxl_instagram-alt (2).svg" alt=""></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center ">
+        <div class="flex justify-between lg:space-x-[18rem] xl:space-x-[30rem]  2xl:space-x-[48rem]">
+          <div class="text-white mb-6">
+            <p class="BiennaleMedium" style="color: rgba(255, 255, 255, 0.5);">© 2022 Pointt Agencia All Rights
+              Reserved.</p>
+          </div>
+
+
+
+
+          <div class="text-white mb-6">
+            <p class="BiennaleMedium" style="color: rgba(255, 255, 255, 0.5);">Diseño y desarrollo por <span
+                class="BiennaleBlod"> <a target="_bank" href="https://esedor.com/#/">Esedor</a> </span></p>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="lg:hidden block">
+    <div class="bg-black">
+      <div class="flex justify-center">
+        <div class="flex flex-col 2xl:space-x-64 xl:space-x-40 lg:space-x-24  border-b-2 mb-20 "
+          style="border-color:#747474;">
+          <div class="flex flex-col mt-16 mb-6">
+            <div class="flex justify-center"><img src="assets/img/Frame.png" alt=""></div>
+            <div class="text-[#3EF992] mt-[23px] flex justify-center">
+              <p>Lima, Perú</p>
+            </div>
+          </div>
+          <div class="flex justify-center text-white mt-14">
+
+            <div class="flex"><i><img src="assets/img/call 1.png" alt=""></i></div>
+
+            <div>
+              <p class="ml-[11px]">960 556 951</p>
+            </div>
+
+          </div>
+
+          <div class="flex flex-wrap text-white mt-14 ">
+
+            <div class="flex"><i><img src="assets/img/envelope 1.png" alt=""></i></div>
+
+            <div>
+              <p class="ml-[11px]">hola@pointtagencia.com</p>
+            </div>
+
+          </div>
+          <div class="flex justify-center">
+            <div class="flex flex-wrap space-x-10 mt-20">
+              <div><i><img
+                    onClick="javascript:window.open('https://www.linkedin.com/company/pointt-agencia-digital/', '_blank');"
+                    style="cursor: pointer;" src="assets/img/Vector (1).png" alt=""></i></div>
+              <div><i><img
+                    onClick="javascript:window.open('https://www.facebook.com/profile.php?id=100068618932400', '_blank');"
+                    style="cursor: pointer;" src="assets/img/Vector (2).png" alt=""></i></div>
+              <div><i><img class="mb-11"
+                    onClick="javascript:window.open('https://www.instagram.com/pointt.agencia/?hl=es-la', '_blank');"
+                    style="cursor: pointer;" src="assets/img/bxl_instagram-alt (2).svg" alt=""></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center ">
+        <div class="flex flex-col lg:space-x-[18rem] xl:space-x-[30rem]  2xl:space-x-[48rem]">
+          <div class="text-white mb-6 flex justify-center">
+            <p class="BiennaleMedium" style="color: rgba(255, 255, 255, 0.5);">© 2022 Pointt Agencia All Rights
+              Reserved.</p>
+          </div>
+
+
+
+
+          <div class="text-white mb-6 flex justify-center">
+            <p class="BiennaleMedium" style="color: rgba(255, 255, 255, 0.5);">Diseño y desarrollo por <span
+                class="BiennaleBlod"> <a target="_bank" href="https://esedor.com/#/">Esedor</a> </span></p>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+</section>

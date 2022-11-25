@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+
+@font-face {
+  font-family: BiennaleBlod;
+  src: url(assets/font/BiennaleBold.ttf);
+}
+
+
+@font-face {
+  font-family: BiennaleMedium;
+  src: url(assets/font/BiennaleMedium.ttf);
+}
+
+
+.BiennaleBlod{
+  font-family: BiennaleBlod;
+}
+
+.BiennaleMedium{
+  font-family: BiennaleMedium;
+}
