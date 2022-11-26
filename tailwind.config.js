@@ -18,6 +18,7 @@ module.exports = {
     '3xl': '1700px',},
     extend: {},
   },
+
   variants: {
     extend: {},
   },
