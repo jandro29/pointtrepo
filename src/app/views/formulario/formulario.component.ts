@@ -84,7 +84,7 @@ export class FormularioComponent implements OnInit {
     this.contactForm.disable();
 
     this.http
-      .post<any>('https://esedor.com/send-mail-pointt.php', contactData)
+      .post<any>('https://pointtagencia.com/send-mail.php', contactData)
       .subscribe(
         (resp) => {
           this.formLoading = false;
