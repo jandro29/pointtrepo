@@ -1,19 +1,31 @@
 <div>
-  <form [formGroup]="miFormulario">
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <div class="flex flex-col space-y-4 lg:space-y-14 mt-20">
-      <div class="lg:flex justify-center lg:flex-wrap lg:space-x-10 w-[100%] ">
+      <div class="lg:flex justify-center lg:flex-wrap lg:space-x-10 w-[100%]">
         <div class="flex justify-center lg:w-[30%]">
-          <mat-form-field class="lg:w-[100%] w-[90%] ">
+          <mat-form-field class="lg:w-[100%] w-[90%]">
             <mat-label>Nombre</mat-label>
-            <input matInput placeholder="Nombre" id="nombre" value="">
+            <input
+              matInput
+              placeholder="Nombre"
+              id="nombre"
+              formControlName="nombre"
+            />
           </mat-form-field>
         </div>
         <div class="flex justify-center mt-[16px] lg:mt-[0px] lg:w-[30%]">
-          <mat-form-field class="lg:w-[200%] w-[90%] ">
+          <mat-form-field class="lg:w-[200%] w-[90%]">
             <mat-label>Celular</mat-label>
-            <input matInput #celular maxlength="9" placeholder="Celular">
+            <input
+              matInput
+              #celular
+              maxlength="9"
+              placeholder="Celular"
+              formControlName="celular"
+              (keypress)="keyPress($event)"
+            />
             <mat-hint align="start"><strong></strong> </mat-hint>
-            <mat-hint align="end">{{celular.value.length}} / 9</mat-hint>
+            <mat-hint align="end">{{ celular.value.length }} / 9</mat-hint>
           </mat-form-field>
         </div>
       </div>
@@ -22,54 +34,128 @@
         <div class="flex justify-center lg:w-[30%]">
           <mat-form-field class="lg:w-[100%] w-[90%]">
             <mat-label>Apellido</mat-label>
-            <input matInput placeholder="Apellido" id="apellido" value="">
+            <input
+              matInput
+              placeholder="Apellido"
+              id="apellido"
+              formControlName="apellido"
+            />
           </mat-form-field>
         </div>
 
-
         <div class="flex justify-center mt-[16px] lg:mt-[0px] lg:w-[30%]">
-          <mat-form-field class=" lg:w-[100%] w-[90%]">
+          <mat-form-field class="lg:w-[100%] w-[90%]">
             <mat-label>Email</mat-label>
-            <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
-              placeholder="pat@example.com">
-            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            <input
+              type="email"
+              matInput
+              formControlName="email"
+              placeholder="pat@example.com"
+            />
+            <!-- <mat-error
+              *ngIf="
+                emailFormControl.hasError('email') &&
+                !emailFormControl.hasError('required')
+              "
+            >
               Por favor ingrese un correo valido
             </mat-error>
             <mat-error *ngIf="emailFormControl.hasError('required')">
               Tu Email <strong>es necesario</strong>
-            </mat-error>
+            </mat-error> -->
           </mat-form-field>
         </div>
       </div>
 
-      <div class="lg:flex justify-center lg:flex-wrap lg:space-x-10  w-[100%]">
+      <div class="lg:flex justify-center lg:flex-wrap lg:space-x-10 w-[100%]">
         <div class="flex justify-center lg:w-[30%]">
-        <mat-form-field class="lg:w-[100%] w-[90%]">
-          <mat-label>Empresa</mat-label>
-          <input matInput placeholder="Empresa" id="empresa" value="">
-        </mat-form-field>
-      </div>
-      <div class="flex justify-center mt-[16px] lg:mt-[0px] lg:w-[30%]">
-        <mat-form-field class="lg:w-[100%] w-[90%]" style="background: rgb(255, 255, 255);">
-          <mat-label>Servicios</mat-label>
-          <mat-select>
-            <mat-option *ngFor="let food of foods" [value]="food.value">
-              {{food.viewValue}}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
+          <mat-form-field class="lg:w-[100%] w-[90%]">
+            <mat-label>Empresa</mat-label>
+            <input
+              matInput
+              placeholder="Empresa"
+              id="empresa"
+              formControlName="empresa"
+            />
+          </mat-form-field>
+        </div>
+        <div class="flex justify-center mt-[16px] lg:mt-[0px] lg:w-[30%]">
+          <mat-form-field
+            class="lg:w-[100%] w-[90%]"
+            style="background: rgb(255, 255, 255)"
+          >
+            <mat-label>Servicios</mat-label>
+            <mat-select formControlName="servicio">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{ food.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
       </div>
 
-      <div class="lg:flex justify-center ">
+      <div class="lg:flex justify-center">
         <div class="flex justify-center lg:w-[62%]">
-        <mat-form-field class="lg:w-[100%] w-[90%]">
-          <mat-label>Mensaje</mat-label>
-          <input matInput #message maxlength="256" placeholder="¿Como te podemos ayudar?">
-          <mat-hint align="start"><strong></strong> </mat-hint>
-          <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
-        </mat-form-field>
+          <mat-form-field class="lg:w-[100%] w-[90%]">
+            <mat-label>Mensaje</mat-label>
+            <input
+              matInput
+              formControlName="mensaje"
+              #message
+              maxlength="256"
+              placeholder="¿Como te podemos ayudar?"
+            />
+            <mat-hint align="start"><strong></strong> </mat-hint>
+            <mat-hint align="end">{{ message.value.length }} / 256</mat-hint>
+          </mat-form-field>
+        </div>
       </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="mt-20 mb-10 lg:block hidden">
+        <button *ngIf="formLoading" class="btn-conversemos" mat-button>
+          Espere...
+        </button>
+        <button
+          *ngIf="!formLoading"
+          type="submit"
+          class="btn-conversemos"
+          mat-button
+        >
+          Enviar
+        </button>
+      </div>
+
+      <div class="w-[100%] block lg:hidden">
+        <div class="flex justify-center">
+          <button
+            *ngIf="formLoading"
+            class="w-[85%] h-[48px] mt-20 mb-10"
+            style="
+              background: #454ade;
+              color: white;
+              border-radius: 12px;
+              filter: drop-shadow(0px 4px 40px rgba(69, 74, 222, 0.4));
+            "
+            mat-button
+          >
+            Espere...
+          </button>
+          <button
+            *ngIf="!formLoading"
+            type="submit"
+            class="w-[85%] h-[48px] mt-20 mb-10"
+            style="
+              background: #454ade;
+              color: white;
+              border-radius: 12px;
+              filter: drop-shadow(0px 4px 40px rgba(69, 74, 222, 0.4));
+            "
+            mat-button
+          >
+            Enviar
+          </button>
+        </div>
       </div>
     </div>
   </form>
