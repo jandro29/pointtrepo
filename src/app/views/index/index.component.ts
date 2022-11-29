@@ -15,11 +15,13 @@ export class IndexComponent implements OnInit {
   constructor() {
    }
 
+
+   reload () { this.ngOnInit(); }
+
   ngOnInit(): void {
     AOS.init();
 
     window.addEventListener('load', AOS.refresh)
-
 
   }
 
