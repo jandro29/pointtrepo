@@ -14,6 +14,20 @@
           </mat-form-field>
         </div>
         <div class="flex justify-center mt-[16px] lg:mt-[0px] lg:w-[30%]">
+          <mat-form-field class="lg:w-[100%] w-[90%]">
+            <mat-label>Apellido</mat-label>
+            <input
+              matInput
+              placeholder="Apellido"
+              id="apellido"
+              formControlName="apellido"
+            />
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="lg:flex justify-center lg:flex-wrap lg:space-x-10 w-[100%]">
+        <div class="flex justify-center lg:w-[30%]">
           <mat-form-field class="lg:w-[200%] w-[90%]">
             <mat-label>Celular</mat-label>
             <input
@@ -26,20 +40,6 @@
             />
             <mat-hint align="start"><strong></strong> </mat-hint>
             <mat-hint align="end">{{ celular.value.length }} / 9</mat-hint>
-          </mat-form-field>
-        </div>
-      </div>
-
-      <div class="lg:flex justify-center lg:flex-wrap lg:space-x-10 w-[100%]">
-        <div class="flex justify-center lg:w-[30%]">
-          <mat-form-field class="lg:w-[100%] w-[90%]">
-            <mat-label>Apellido</mat-label>
-            <input
-              matInput
-              placeholder="Apellido"
-              id="apellido"
-              formControlName="apellido"
-            />
           </mat-form-field>
         </div>
 
@@ -119,8 +119,15 @@
         <button
           *ngIf="!formLoading"
           type="submit"
-          class="btn-conversemos"
+          class="btn-conversemos w-[216px] h-[48px]"
+          style="
+              background: #454ade;
+              color: white;
+              border-radius: 12px;
+              filter: drop-shadow(0px 4px 40px rgba(69, 74, 222, 0.4));
+            "
           mat-button
+
         >
           Enviar
         </button>
