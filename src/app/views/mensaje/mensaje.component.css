@@ -17,5 +17,9 @@
     border-radius: 12px;
      width: 182px;
       height:48px;
-       color: #ffffff;
+    color: #ffffff;
+}
+
+.a-conversemos:hover{
+  color: #ffffff;
 }
