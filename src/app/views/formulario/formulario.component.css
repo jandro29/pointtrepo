@@ -14,3 +14,16 @@ input[type=number] {
   width: 20%;
   height: 50%;
 }
+
+
+.btn-conversemos:hover{
+  transition: 0.40s;
+  transform: scale(1.05);
+  background: black;
+  cursor: pointer;
+   background: rgb(78, 78, 252);
+    border-radius: 12px;
+     width: 210px;
+      height:48px;
+       color: #ffffff;
+}
