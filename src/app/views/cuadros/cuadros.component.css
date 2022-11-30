@@ -3,6 +3,17 @@
   font-size: 14.5px;
 }
 
+.btn-conversemos-resp{
+  width: 185px;
+  height: 48px;
+  background: black;
+  cursor: pointer;
+   background: #454ADE;
+    border-radius: 12px;
+       color: #ffffff;
+
+}
+
 .btn-conversemos{
   width: 185px;
   height: 48px;
