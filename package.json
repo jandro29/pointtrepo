@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
     "start": "ng serve",
     "build": "ng build",
+    "build:gh": "ng build --base-href=/pointtrepo/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "build:gh": "ng build --base-href=/pointtrepo/"
+    "test": "ng test"
+
   },
   "private": true,
   "dependencies": {
